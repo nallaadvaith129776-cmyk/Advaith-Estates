@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Advaith Estates — Building Tomorrow</title>
+  <meta name="description" content="Advaith Estates — Residential & Commercial Construction | Design • Build • Deliver" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --brand:#0f6ab4;
+      --accent:#f59e0b;
+      --muted:#6b7280;
+      --bg:#f7fafc;
+      --card:#ffffff;
+      --glass: rgba(255,255,255,0.6);
+      --radius:14px;
+      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,#f7fbff 0%, #fbfbff 100%);color:#0f172a;line-height:1.45}
+    header{position:sticky;top:0;z-index:60;background:rgba(255,255,255,0.85);backdrop-filter: blur(6px);box-shadow:0 6px 20px rgba(15,23,42,0.06)}
+    .container{max-width:1100px;margin:0 auto;padding:24px}
+
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:800;font-size:18px;color:var(--brand)}
+    .brand .logo{width:44px;height:44px;border-radius:10px;background:linear-gradient(135deg,var(--brand),#2fb0ff);display:inline-flex;align-items:center;justify-content:center;color:#fff;font-weight:900}
+    nav ul{display:flex;gap:18px;list-style:none;margin:0;padding:0}
+    nav a{color:inherit;text-decoration:none;font-weight:600}
+    .cta{background:var(--brand);color:white;padding:10px 14px;border-radius:10px;font-weight:700}
+
+   
+    .hero{display:grid;grid-template-columns:1fr 460px;gap:28px;padding:48px 0;align-items:center}
+    .eyebrow{display:inline-block;padding:6px 10px;background:linear-gradient(90deg,var(--accent),#fbbf24);border-radius:999px;color:#08233b;font-weight:700;font-size:13px}
+    h1{margin:18px 0 12px;font-size:36px;line-height:1.05}
+    p.lead{color:var(--muted);margin:0 0 20px}
+    .hero .actions{display:flex;gap:12px}
+    .card{background:var(--card);border-radius:16px;padding:18px;box-shadow:0 8px 30px rgba(12,18,30,0.06)}
+
+    .highlights{display:flex;gap:12px;margin-top:18px}
+    .stat{flex:1;text-align:center;padding:12px}
+    .stat h3{margin:6px 0 0}
+
+    .services{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:34px 0}
+    .service{padding:18px;border-radius:12px;background:linear-gradient(180deg,#fff,#fbfdff);box-shadow:0 6px 24px rgba(12,18,30,0.04)}
+    .service h4{margin:10px 0}
+
+
+    .projects{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+    .project{border-radius:12px;overflow:hidden;position:relative}
+    .project img{display:block;width:100%;height:220px;object-fit:cover}
+    .project .pmeta{position:absolute;left:12px;bottom:12px;background:linear-gradient(90deg,rgba(0,0,0,0.6),rgba(0,0,0,0.15));color:white;padding:8px 10px;border-radius:10px;font-weight:700}
+
+  
+    .contact-grid{display:grid;grid-template-columns:1fr 380px;gap:18px;margin:28px 0}
+    form{display:grid;gap:10px}
+    input,textarea,select{padding:12px;border-radius:10px;border:1px solid #e6e9ef;font-size:15px}
+    button.btn{padding:12px;border-radius:10px;border:0;font-weight:800}
+     footer{padding:28px 0;color:var(--muted);font-size:14px}
+
+    @media (max-width:980px){
+      .hero{grid-template-columns:1fr;}
+      .projects{grid-template-columns:repeat(2,1fr)}
+      .services{grid-template-columns:repeat(2,1fr)}
+      .contact-grid{grid-template-columns:1fr}
+      nav ul{display:none}
+    }
+    @media (max-width:560px){
+      .projects{grid-template-columns:1fr}
+      .service{padding:14px}
+      h1{font-size:28px}
+      .brand{font-size:16px}
+    }
+
+    .muted{color:var(--muted)}
+    .pill{display:inline-block;padding:6px 10px;border-radius:999px;background:rgba(15,106,180,0.08);color:var(--brand);font-weight:700}
+    .grid-cols-3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+  </style>
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <div class="brand" aria-label="Advaith Estates">
+      <div class="logo">AE</div>
+      <div>
+        <div style="line-height:1">Advaith Estates</div>
+        <div style="font-size:11px;color:var(--muted);font-weight:600;margin-top:2px">Design • Build • Deliver</div>
+      </div>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div style="display:flex;gap:10px;align-items:center">
+      <a class="cta" href="#contact">Get A Quote</a>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+  <section class="hero">
+    <div>
+      <span class="danger">Trusted Since 2008</span>
+      <h1>Advaith Estates — Building landmarks, shaping communities.</h1>
+      <p class="lead">We deliver residential and commercial projects with strong engineering, transparent costs and timelines. From architecture and construction to interior finishes — we manage everything end-to-end.</p>
+
+      <div class="card" style="display:block;max-width:680px">
+        <div style="display:flex;gap:18px;align-items:center;justify-content:space-between;flex-wrap:wrap">
+          <div>
+            <div style="font-size:13px;color:var(--muted)">Free Consultation</div>
+            <div style="font-weight:800;font-size:20px">Site visit + estimate within 48 hours</div>
+          </div>
+          <div class="hero-actions">
+            <a class="cta" href="#contact">Request Quote</a>
+            <a style="padding:10px 14px;border-radius:10px;border:1px solid #e6eefc;font-weight:700;text-decoration:none;color:var(--brand)" href="#projects">View Projects</a>
+          </div>
+        </div>
+
+        <div class="highlights">
+          <div class="stat"><div style="font-size:18px;font-weight:800">500+</div><div class="muted">Homes Built</div></div>
+          <div class="stat"><div style="font-size:18px;font-weight:800">120+</div><div class="muted">Commercial Buildouts</div></div>
+          <div class="stat"><div style="font-size:18px;font-weight:800">98%</div><div class="muted">On-time Delivery</div></div>
+        </div>
+      </div>
+
+    </div>
+
+    <aside>
+      <div class="card">
+        <h3 style="margin:0 0 8px">Why choose Advaith Estates?</h3>
+        <ul style="margin:0;padding-left:18px;color:var(--muted)">
+          <li>In-house architects & structural engineers</li>
+          <li>Transparent cost breakdowns and milestones</li>
+          <li>Sustainable materials & efficient project management</li>
+          <li>Post-handover support and warranties</li>
+        </ul>
+        <div style="margin-top:12px;display:flex;gap:8px;align-items:center">
+          <div class="pill">ISO 9001</div>
+          <div class="pill">5 Year Warranty</div>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:14px">
+        <h4 style="margin:0 0 8px">Quick estimator</h4>
+        <form id="estimator" onsubmit="return false">
+          <label class="muted" style="font-size:13px">Project type</label>
+          <select id="ptype">
+            <option>Residential - Home</option>
+            <option>Residential - Apartment</option>
+            <option>Commercial - Office</option>
+            <option>Commercial - Retail</option>
+          </select>
+          <label class="muted" style="font-size:13px">Area (sq ft)</label>
+          <input id="area" type="number" min="100" placeholder="e.g. 1200" />
+          <button class="btn" style="background:var(--brand);color:white" onclick="estimate()">Estimate Cost</button>
+          <div id="estimateResult" style="margin-top:10px;color:var(--muted)"></div>
+        </form>
+      </div>
+    </aside>
+  </section>
+
+  <section id="services">
+    <h2 style="margin-top:16px">Our Services</h2>
+    <div class="services">
+      <div class="service">
+        <h4>Design & Architecture</h4>
+        <div class="muted">Concept design, drawings, 3D visualizations and permit documentation.</div>
+      </div>
+      <div class="service">
+        <h4>Project Management</h4>
+        <div class="muted">End-to-end planning, timelines, procurement and quality control.</div>
+      </div>
+      <div class="service">
+        <h4>Turnkey Construction</h4>
+        <div class="muted">Civil work, MEP, finishes and handover with warranty.</div>
+      </div>
+      <div class="service">
+        <h4>Interior Fit-outs</h4>
+        <div class="muted">Custom interior solutions for homes and offices with trusted vendors.</div>
+      </div>
+      <div class="service">
+        <h4>Renovation & Extensions</h4>
+        <div class="muted">Upgrade existing spaces with minimal disruption.</div>
+      </div>
+      <div class="service">
+        <h4>Consulting & Feasibility</h4>
+        <div class="muted">Site feasibility, cost-benefit, and schedule advisory.</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Selected Projects</h2>
+    <div class="projects">
+      <div class="project">
+        <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=123456" alt="Modern residential building">
+        <div class="pmeta">ADVAITH Residency</div>
+      </div>
+      <div class="project">
+        <img src="villa image.jpg" alt="Contemporary villa">
+        <div class="pmeta">ADVAITH Villas</div>
+      </div>
+      <div class="project">
+        <img src="park image.jpg" alt="Office complex">
+        <div class="pmeta">ADVAITH Corporate Park</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" style="margin-top:28px">
+    <h2>About Us</h2>
+    <div style="display:grid;grid-template-columns:1fr 320px;gap:18px;align-items:start;margin-top:12px">
+      <div>
+        <p class="muted">Advaith Estates is a full-service construction and development company focused on delivering quality residential and commercial projects across India. Our integrated approach brings architects, engineers, project managers and skilled trades together so clients get exceptional value and timely delivery.</p>
+        <ul style="color:var(--muted);">
+          <li>Leadership with 20+ years industry experience</li>
+          <li>Commitment to sustainable and cost-effective solutions</li>
+          <li>Client-first communication and transparent billing</li>
+        </ul>
+      </div>
+      <div class="card">
+        <strong>Head Office</strong>
+        <div class="muted">Plot 22B, Industrial Area<br/>Rajkot, Gujarat<br/>Phone: +91 6300627276<br/>Email: hello@advaithestates.com</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" style="margin-top:28px">
+    <h2>Contact & Quote Request</h2>
+    <div class="contact-grid">
+      <div>
+        <form id="contactForm" onsubmit="return false">
+          <input id="cname" placeholder="Your full name" required />
+          <input id="cemail" placeholder="Email address" type="email" required />
+          <input id="cphone" placeholder="Phone (optional)" />
+          <select id="cproject">
+            <option>Residential - New Home</option>
+            <option>Residential - Apartment</option>
+            <option>Commercial - Office</option>
+            <option>Renovation/Extension</option>
+          </select>
+          <textarea id="cmessage" rows="5" placeholder="Brief project description & timeline"></textarea>
+          <div style="display:flex;gap:8px;align-items:center">
+            <button class="btn" id="sendBtn" style="background:var(--brand);color:#fff" onclick="submitContact()">Send Request</button>
+            <div id="sendMsg" class="muted" style="font-size:13px"></div>
+          </div>
+        </form>
+      </div>
+      <aside>
+        <div class="card">
+          <h4>Office Hours</h4>
+          <div class="muted">Mon - Sat: 9:30am - 6:30pm<br/>Sun: Emergency only</div>
+          <div style="margin-top:12px;font-weight:800">Get a free site visit within 48 hours of request</div>
+        </div>
+        <div class="card" style="margin-top:12px">
+          <h4>Quick Links</h4>
+          <ul style="color:var(--muted)">
+            <li><a href="#projects">Portfolio</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">Company Profile</a></li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section style="margin-top:42px">
+    <h2>Client Testimonials</h2>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:12px">
+      <div class="card">
+        <strong> SAI RITHVIK</strong>
+        <div class="muted" style="font-size:14px;margin-top:8px">"Advaith Estates delivered our home on time and the workmanship is excellent. Communication was clear throughout."</div>
+      </div>
+      <div class="card">
+        <strong>ADITHYA (Office Fitout)</strong>
+        <div class="muted" style="font-size:14px;margin-top:8px">"Smooth process and minimal downtime. The team completed the fitout within the promised window."</div>
+      </div>
+      <div class="card">
+        <strong>VIKAS REDDY Developers</strong>
+        <div class="muted" style="font-size:14px;margin-top:8px">"Great project management and attention to detail — recommended for larger developments."</div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container" style="display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap">
+    <div>
+      <div style="font-weight:800">Advaith Estates</div>
+      <div class="muted" style="font-size:13px">&copy; <span id="year"></span> Advaith Estates — All rights reserved</div>
+    </div>
+    <div class="muted">Designed by Advaith Estates • Built with care</div>
+  </div>
+</footer>
+
+<script>
+ 
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  function estimate(){
+    const area = Number(document.getElementById('area').value) || 0;
+    const type = document.getElementById('ptype').value;
+    if(area < 100){ document.getElementById('estimateResult').textContent = 'Enter an area (min 100 sq ft)'; return }
+   
+    const rates = {
+      'Residential - Home': 1800,
+      'Residential - Apartment': 2000,
+      'Commercial - Office': 2400,
+      'Commercial - Retail': 2600
+    };
+    const rate = rates[type] || 2000;
+    const cost = Math.round(area * rate);
+    document.getElementById('estimateResult').innerHTML = `<strong>Estimated build cost:</strong> ₹ ${cost.toLocaleString()} (approx.)`;
+  }
+
+  function submitContact(){
+    const name = document.getElementById('cname').value.trim();
+    const email = document.getElementById('cemail').value.trim();
+    const message = document.getElementById('cmessage').value.trim();
+    const sq = document.getElementById('sendMsg');
+    if(!name || !email){ sq.textContent = 'Please provide name and email.'; return }
+    
+    sq.textContent = 'Thanks — your request has been received. We will contact you within 48 hours.';
+    document.getElementById('contactForm').reset();
+   
+    toast('Request sent ✔');
+  }
+
+  function toast(txt){
+    const t = document.createElement('div');
+    t.textContent = txt;
+    Object.assign(t.style,{position:'fixed',right:'18px',bottom:'18px',padding:'12px 16px',background:'rgba(12,18,30,0.9)',color:'#fff',borderRadius:'10px',zIndex:9999});
+    document.body.appendChild(t);
+    setTimeout(()=>{t.style.transition='all 400ms';t.style.opacity='0';t.style.transform='translateY(10px)';},2000);
+    setTimeout(()=>t.remove(),2500);
+  }
+  document.querySelectorAll('a[href^="#"]').forEach(a=>{
+    a.addEventListener('click', e=>{
+      e.preventDefault();
+      const id = a.getAttribute('href').slice(1);
+      const el = document.getElementById(id);
+      if(el) el.scrollIntoView({behavior:'smooth',block:'start'});
+    });
+  });
+</script>
+</body>
+</html>
